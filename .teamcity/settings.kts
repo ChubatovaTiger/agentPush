@@ -53,13 +53,22 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_4"
             profileId = "amazon-1"
-            agentPoolId = "-2"
             name = "templateIm"
             vpcSubnetId = "subnet-043178c302cabfe37"
             instanceType = "t3.medium"
             securityGroups = listOf("sg-072d8bfa0626ea2a6")
             customizeLaunchTemplate = true
             source = LaunchTemplate(templateId = "lt-00b191746fd8ced55", version = AmazonEC2CloudImage.DEFAULT_VERSION)
+        }
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_5"
+            profileId = "amazon-1"
+            agentPoolId = "-2"
+            vpcSubnetId = "subnet-043178c302cabfe37"
+            keyPairName = "chubatova-amazon-ireland"
+            instanceType = "t3.medium"
+            securityGroups = listOf("sg-072d8bfa0626ea2a6")
+            source = Source("i-08403d265340cc4d6")
         }
         amazonEC2CloudProfile {
             id = "amazon-1"
