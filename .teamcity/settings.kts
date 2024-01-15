@@ -24,7 +24,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2023.05"
+version = "2023.11"
 
 project {
 
@@ -51,7 +51,7 @@ project {
                 keyId = "credentialsJSON:ef0cd595-fa41-4e28-8169-24caa83b3fbe"
                 secretKey = "credentialsJSON:b8b3646f-5cbd-4934-b840-62f0b0bd3b18"
             }
-            param("agentPushPreset", "1705303648583")
+            param("agentPushPreset", "1705306954297")
         }
     }
 }
