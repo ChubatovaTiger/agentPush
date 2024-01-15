@@ -44,6 +44,7 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_3"
             profileId = "amazon-1"
+            agentPoolId = "1"
             name = "amiim"
             vpcSubnetId = "subnet-043178c302cabfe37"
             instanceType = "t3.medium"
@@ -53,6 +54,7 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_4"
             profileId = "amazon-1"
+            agentPoolId = "1"
             name = "templateIm"
             vpcSubnetId = "subnet-043178c302cabfe37"
             instanceType = "t3.medium"
@@ -80,7 +82,7 @@ project {
                 keyId = "credentialsJSON:ef0cd595-fa41-4e28-8169-24caa83b3fbe"
                 secretKey = "credentialsJSON:b8b3646f-5cbd-4934-b840-62f0b0bd3b18"
             }
-            param("agentPushPreset", "1705306954297")
+            param("agentPushPreset", "1705303648583")
         }
     }
 }
