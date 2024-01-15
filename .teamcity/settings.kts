@@ -44,12 +44,22 @@ project {
         amazonEC2CloudImage {
             id = "PROJECT_EXT_3"
             profileId = "amazon-1"
-            agentPoolId = "-2"
             name = "amiim"
             vpcSubnetId = "subnet-043178c302cabfe37"
             instanceType = "t3.medium"
             securityGroups = listOf("sg-072d8bfa0626ea2a6")
             source = Source("ami-0819c29c24aaed21b")
+        }
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_4"
+            profileId = "amazon-1"
+            agentPoolId = "-2"
+            name = "templateIm"
+            vpcSubnetId = "subnet-043178c302cabfe37"
+            instanceType = "t3.medium"
+            securityGroups = listOf("sg-072d8bfa0626ea2a6")
+            customizeLaunchTemplate = true
+            source = LaunchTemplate(templateId = "lt-00b191746fd8ced55", version = AmazonEC2CloudImage.DEFAULT_VERSION)
         }
         amazonEC2CloudProfile {
             id = "amazon-1"
