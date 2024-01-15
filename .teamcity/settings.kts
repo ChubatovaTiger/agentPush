@@ -41,6 +41,16 @@ project {
             securityGroups = listOf("sg-072d8bfa0626ea2a6")
             source = Source("ami-0b80008bcbc184132")
         }
+        amazonEC2CloudImage {
+            id = "PROJECT_EXT_3"
+            profileId = "amazon-1"
+            agentPoolId = "-2"
+            name = "amiim"
+            vpcSubnetId = "subnet-043178c302cabfe37"
+            instanceType = "t3.medium"
+            securityGroups = listOf("sg-072d8bfa0626ea2a6")
+            source = Source("ami-0819c29c24aaed21b")
+        }
         amazonEC2CloudProfile {
             id = "amazon-1"
             name = "ec2profile"
