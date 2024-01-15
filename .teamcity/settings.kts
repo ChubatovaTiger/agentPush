@@ -28,7 +28,7 @@ version = "2023.05"
 
 project {
 
-    buildType(Build1)
+    buildType(Build2)
 
     features {
         amazonEC2CloudImage {
@@ -56,6 +56,6 @@ project {
     }
 }
 
-object Build1 : BuildType({
-    name = "build1"
+object Build2 : BuildType({
+    name = "build2"
 })
